@@ -100,7 +100,7 @@ def find_client(conn, first_name=None, last_name=None, email=None, phone=None):
     else:
         print('Данные не найдены')
 
-with psycopg2.connect(database = 'netology_db', user= 'postgres', password = 'patata2') as conn:
+with psycopg2.connect(database = 'netology_db', user= 'postgres', password = 'postgres') as conn:
     create_db(conn)
     add_client(conn,first_name='Ivan', last_name='Ivanov', email='ivanovivan@mail.ru')
     add_client(conn, first_name='Peter', last_name='Petrov',email= 'petrovpetr@mail.ru',phones =['111111111','222222222'])
